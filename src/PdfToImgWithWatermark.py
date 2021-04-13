@@ -78,7 +78,7 @@ class PdfToWebp():
         print("打上水印的可能性为:",round(sim,2))
 
 if __name__ == '__main__':
-    #输入pdf转换为压缩后的webp图片到输出目录,图片的质量为100(质量更低的话更小),且要求图片尺寸是原尺寸的3倍
+    #输入pdf转换为压缩后的webp图片到输出目录,图片的质量为100(质量更低的话占用空间更小),且要求图片尺寸是原尺寸的3倍
     cwd=os.getcwd()
     handle=PdfToWebp(os.path.join(cwd,"..","input","example.pdf"),os.path.join(cwd,"..","output"),20,3)
     #不考虑之前的缩放系数3, 而设置输出的图片宽一定是约为1000像素
