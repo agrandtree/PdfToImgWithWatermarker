@@ -19,3 +19,4 @@ handle.saveImg(im,"0_watermark",quality=100)
 #查看刚才的图片是否打上水印
 ori=cv2.imread(os.path.join(cwd,"..","output","0_watermark.webp"))
 handle.checkImgHasWartermark(ori,watermarkimg)
+
